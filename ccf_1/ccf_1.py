@@ -1,4 +1,4 @@
-﻿## Fonction permettant de vérifier si l'image est complétement noire (cinstituée que de 0).
+﻿## Fonction permettant de vérifier si l'image est complétement noire (constituée que de 0).
 def verifyImage (array):
     amount = 0 #Compteur
     for list in array: #Boucle pour parcourir tout les éléments du tableau
