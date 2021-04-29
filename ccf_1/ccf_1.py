@@ -32,4 +32,4 @@ def retouchImage(array):
 ## Test de toutes les fonctions (appel des fonctions)
 print(verifyImage([[1,1,1,1],[0,0,0,1]]))
 print(averageImage([[1,1,1,1],[0,0,0,1]]))
-print (retouchImage([[1,1,1,1],[0,0,0,1]]))
+print(retouchImage([[1,1,1,1],[0,0,0,1]]))
