@@ -1,4 +1,4 @@
-﻿## Fonction permettant de compter le nombre de pixel noir (à 1) dans une image de taille n*p.
+## Fonction permettant de compter le nombre de pixel noir (à 1) dans une image de taille n*p. (compterPixelsA1)
 def countPixelsA1(array):
     amount = 0 #Compteur
     for list in array: #Boucle pour parcourir tout les éléments du tableau
@@ -7,7 +7,7 @@ def countPixelsA1(array):
                 amount = amount + element
     return amount
 
-## Fonction permettant de crée une image blanche composée d'une bordure noire.
+## Fonction permettant de crée une image blanche composée d'une bordure noire. (cadreNoir)
 def blackFrame(n,p):
     array = [[0 for k in range (p)] for l in range (n)] #Créer un tableau de p colonnes et n lignes
     for i in range (n): #Boucle pour parcourir tout les élements du tableau
@@ -16,7 +16,7 @@ def blackFrame(n,p):
                 array[i][j] = 1
     return array
 
-## Fonction permettant de superposer deux images.
+## Fonction permettant de superposer deux images. (superposerImages)
 def overlayImage(array1,array2):
     nbrLines = len(array1) #Obtient le nombre de lignes
     nbrCol = len(array1[0]) #Obtient le nombre de colonnes
@@ -27,7 +27,7 @@ def overlayImage(array1,array2):
                 array3[i][j] = 1
     return array3
 
-## Fonction crée une image formant un X
+## Fonction crée une image formant un X (mystere)
 def mystery(n):
     array = [[0 for k in range (n)] for l in range (n)] #Créer un tableau de n colonnes et n lignes
     for i in range (n): #Boucle pour parcourir tout les éléments du tableau
