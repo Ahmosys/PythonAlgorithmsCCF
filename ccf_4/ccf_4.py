@@ -1,4 +1,4 @@
-﻿## Fonction permettant de transformer l'image en négative en inversant les 1 et les 0.
+﻿## Fonction permettant de transformer l'image en négative en inversant les 1 et les 0. (Negatif)
 def negative(array):
     nbrLine = len(array) #Obtient le nombre de lignes
     nbrCol = len(array[0]) #Obtient le nombre de colonnes
@@ -10,7 +10,7 @@ def negative(array):
                 array[i][j] = 1
     return array
 
-## Fonction permettant de retourner une image deux fois plus grande que celle fournit de base.
+## Fonction permettant de retourner une image deux fois plus grande que celle fournit de base. (Double)
 def double(array):
     nbrLines = len(array) #Obtient le nombre de lignes
     nbrCol = len(array[0]) #Obtient le nombre de colonnes
@@ -23,8 +23,8 @@ def double(array):
             arrayDouble[2*i+1][2*j+1] = array[i][j] #Quatrieme element en bas à droite
     return arrayDouble
 
-## Fonction permettant de produire un carré noir c'est à dire que les contours de l'image sont blanc.
-def mystere(n):
+## Fonction permettant de produire un carré noir c'est à dire que les contours de l'image sont blanc. (mystère)
+def mystery(n):
     array = [[0 for k in range (n)] for l in range (n)] #Nouveau tableau de taille n colonnes et n lignes (renseigner en paramètre)
     q = (n-n%4)/4
     for i in range (n): #Boucle pour parcourir tout les éléments du tableau
@@ -37,4 +37,4 @@ def mystere(n):
 
 ## Test de toutes les fonctions (appel des fonctions)
 def testFunctions():
-    return (double(negative(mystere(6))))
+    return (double(negative(mystery(6))))
