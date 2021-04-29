@@ -27,7 +27,7 @@ def overlayImage(array1,array2):
                 array3[i][j] = 1
     return array3
 
-## Fonction crée une image formant un X (mystere)
+## Fonction crée une image formant un X. (mystere)
 def mystery(n):
     array = [[0 for k in range (n)] for l in range (n)] #Créer un tableau de n colonnes et n lignes
     for i in range (n): #Boucle pour parcourir tout les éléments du tableau
