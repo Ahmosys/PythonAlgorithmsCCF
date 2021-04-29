@@ -18,7 +18,7 @@ def averageImage(array):
         for element in list:
             amount = amount + element #Permet d'obtenir la somme de tout les éléments
             coeff = coeff + 1 # A chaque élément on ajoute 1 à coeff ce qui nous permettras de trouver le nombre d'élements total
-    average = amount / coeff #Calcul pour trouvé la moyennes (somme / coefficient)
+    average = amount / coeff #Calcul pour trouvé la moyenne (somme / coefficient)
     return average
 
 ## Fonction permettant de jugée si l'image est satisfaisante ou non en se basant sur sa moyenne de luminosité.
